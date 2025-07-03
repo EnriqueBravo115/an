@@ -1,7 +1,9 @@
 - name: install gui
-  community.general.pacman:
+  pacman:
     name:
       - nemo
       - libreoffice
       - keepass
+      - nitrogen
+      - xfce4-power-manager
     state: present

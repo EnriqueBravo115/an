@@ -4,5 +4,6 @@
       - tcpdump
       - bluez
       - bluez-utils
+      - blueman
       - android-file-transfer
     state: present

@@ -1,6 +1,8 @@
 - name: install wm
   pacman:
     name:
+      - i3-gaps
+      - i3status
       - dmenu
       - lxappearance
       - picom

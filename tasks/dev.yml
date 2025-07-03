@@ -1,6 +1,7 @@
 - name: install dev
   pacman:
     name:
+      - kitty
       - nodejs
       - npm
       - neovim

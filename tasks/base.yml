@@ -8,6 +8,5 @@
       - zip
       - docker
       - curl
-      - git
     state: present
     update_cache: true

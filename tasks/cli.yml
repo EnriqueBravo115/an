@@ -6,9 +6,11 @@
       - atool
       - keepass
       - unzip
+      - hyfetch
       - zip
       - zathura
       - zathura-pdf-poppler
       - zathura-cb
+      - volumeicon
       - lf
     state: present
