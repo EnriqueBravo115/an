@@ -5,5 +5,4 @@
       - pavucontrol
       - ffmpegthumbnailer
       - mediainfo
-      - spek
     state: present
