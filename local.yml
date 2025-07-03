@@ -1,0 +1,12 @@
+- name: install complete system
+  hosts: localhost
+  become: true
+  tasks:
+    - import_tasks: tasks/base.yml
+    - import_tasks: tasks/fonts.yml
+    - import_tasks: tasks/wm.yml
+    - import_tasks: tasks/multimedia.yml
+    - import_tasks: tasks/network.yml
+    - import_tasks: tasks/dev.yml
+    - import_tasks: tasks/cli.yml
+    - import_tasks: tasks/apps.yml

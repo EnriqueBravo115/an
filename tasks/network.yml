@@ -1,0 +1,8 @@
+- name: install network
+  pacman:
+    name:
+      - tcpdump
+      - bluez
+      - bluez-utils
+      - android-file-transfer
+    state: present

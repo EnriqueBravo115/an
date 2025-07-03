@@ -1,0 +1,9 @@
+- name: install multimedia
+  pacman:
+    name:
+      - mpv
+      - pavucontrol
+      - ffmpegthumbnailer
+      - mediainfo
+      - spek
+    state: present

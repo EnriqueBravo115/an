@@ -1,0 +1,7 @@
+- name: install fonts
+  pacman:
+    name:
+      - ttf-iosevka-nerd
+      - noto-fonts-emoji
+      - adobe-source-han-sans-cn-fonts
+    state: present

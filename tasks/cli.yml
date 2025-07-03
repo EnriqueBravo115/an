@@ -1,0 +1,14 @@
+- name: install cli
+  pacman:
+    name:
+      - maim
+      - tmux
+      - atool
+      - keepass
+      - unzip
+      - zip
+      - zathura
+      - zathura-pdf-poppler
+      - zathura-cb
+      - lf
+    state: present

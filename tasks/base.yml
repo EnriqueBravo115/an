@@ -1,0 +1,13 @@
+- name: install base
+  pacman:
+    name:
+      - xorg-server
+      - xorg-xinit
+      - man
+      - unzip
+      - zip
+      - docker
+      - curl
+      - git
+    state: present
+    update_cache: true

@@ -1,0 +1,14 @@
+- name: install dev
+  pacman:
+    name:
+      - nodejs
+      - npm
+      - neovim
+      - vim
+      - emacs
+      - stow
+      - dbeaver
+      - ripgrep
+      - fzf
+      - zsh
+    state: present

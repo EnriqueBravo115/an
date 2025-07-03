@@ -1,0 +1,11 @@
+- name: install wm
+  pacman:
+    name:
+      - dmenu
+      - lxappearance
+      - picom
+      - feh
+      - redshift
+      - xclip
+      - ueberzug
+    state: present

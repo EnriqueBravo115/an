@@ -1,0 +1,7 @@
+- name: install gui
+  pacman:
+    name:
+      - nemo
+      - libreoffice
+      - keepass
+    state: present
