@@ -1,4 +1,5 @@
 - name: install wm
+  become: true
   pacman:
     name:
       - i3-gaps

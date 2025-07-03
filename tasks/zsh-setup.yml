@@ -1,0 +1,11 @@
+- name: change to zsh
+  shell: chsh -s $(which zsh)
+
+- name: install ohmyzsh
+  ansible.builtin.shell: |
+    RUNZSH=no CHSH=no KEEP_ZSHRC=yes \
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  args:
+    executable: /bin/bash
+  environment:
+    HOME: "{{ ansible_env.HOME }}"

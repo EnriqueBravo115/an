@@ -1,4 +1,5 @@
 - name: install fonts
+  become: true
   pacman:
     name:
       - ttf-iosevka-nerd

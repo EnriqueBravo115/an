@@ -1,4 +1,5 @@
 - name: install gui
+  become: true
   pacman:
     name:
       - nemo

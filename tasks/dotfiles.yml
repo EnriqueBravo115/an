@@ -1,0 +1,11 @@
+- name: clone dotfiles repo
+  git:
+    repo: "git@github.com:EnriqueBravo115/dt.git"
+    dest: "{{ ansible_env.HOME }}/dt"
+    version: main
+    update: yes
+
+- name: apply dotfiles
+  shell: stow .
+  args:
+    chdir: "{{ ansible_env.HOME }}/dt"

@@ -1,4 +1,5 @@
 - name: install base
+  become: true
   pacman:
     name:
       - xorg-server

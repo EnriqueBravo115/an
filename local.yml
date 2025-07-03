@@ -1,6 +1,5 @@
 - name: install complete system
   hosts: localhost
-  become: true
   tasks:
     - import_tasks: tasks/base.yml
     - import_tasks: tasks/fonts.yml
@@ -10,3 +9,5 @@
     - import_tasks: tasks/dev.yml
     - import_tasks: tasks/cli.yml
     - import_tasks: tasks/apps.yml
+    - import_tasks: tasks/dotfiles.yml
+    - import_tasks: tasks/zsh-setup.yml

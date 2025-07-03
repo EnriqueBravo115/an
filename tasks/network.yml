@@ -1,4 +1,5 @@
 - name: install network
+  become: true
   pacman:
     name:
       - tcpdump

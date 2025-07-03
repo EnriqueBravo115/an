@@ -1,4 +1,5 @@
 - name: install multimedia
+  become: true
   pacman:
     name:
       - mpv

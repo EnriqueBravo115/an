@@ -1,4 +1,5 @@
 - name: install cli
+  become: true
   pacman:
     name:
       - maim
