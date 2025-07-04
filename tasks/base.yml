@@ -10,5 +10,6 @@
       - docker
       - curl
       - openssh
+      - tar
     state: present
     update_cache: true

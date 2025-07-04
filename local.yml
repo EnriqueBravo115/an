@@ -18,3 +18,4 @@
     - import_tasks: tasks/sdkman.yml
     - import_tasks: tasks/clj.yml
     - import_tasks: tasks/doom.yml
+    - import_tasks: tasks/postman.yml
