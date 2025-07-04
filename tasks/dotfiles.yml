@@ -1,6 +1,6 @@
 - name: clone dotfiles repo
   git:
-    repo: "git@github.com:EnriqueBravo115/dt.git"
+    repo: "https://github.com/EnriqueBravo115/dt.git"
     dest: "{{ ansible_env.HOME }}/dt"
     version: main
     update: yes
