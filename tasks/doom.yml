@@ -1,0 +1,13 @@
+- name: clone doom
+  ansible.builtin.git:
+    repo: https://github.com/doomemacs/doomemacs
+    dest: "{{ ansible_env.HOME }}/.config/emacs"
+    depth: 1
+    update: no
+
+- name: execute doom
+  ansible.builtin.command: "{{ ansible_env.HOME }}/.config/emacs/bin/doom install"
+  args:
+    creates: "{{ ansible_env.HOME }}/.config/emacs/.local"
+  environment:
+    HOME: "{{ ansible_env.HOME }}"
