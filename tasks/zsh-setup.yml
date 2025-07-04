@@ -1,5 +1,12 @@
+- name: actual user
+  ansible.builtin.command: whoami
+  register: current_user
+
 - name: change to zsh
-  shell: chsh -s $(which zsh)
+  become: true
+  ansible.builtin.user:
+    name: "{{ current_user.stdout }}"
+    shell: /bin/zsh
 
 - name: install ohmyzsh
   ansible.builtin.shell: |
@@ -8,4 +15,4 @@
   args:
     executable: /bin/bash
   environment:
-    HOME: "{{ ansible_env.HOME }}"
+    HOME: "/home/{{ current_user.stdout }}"
