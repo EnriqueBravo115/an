@@ -6,7 +6,9 @@
     update: no
 
 - name: execute doom
-  ansible.builtin.command: "{{ ansible_env.HOME }}/.config/emacs/bin/doom install"
+  ansible.builtin.command: >
+    {{ ansible_env.HOME }}/.config/emacs/bin/doom install
+    --yes --env --fonts --hooks
   args:
     creates: "{{ ansible_env.HOME }}/.config/emacs/.local"
   environment:
