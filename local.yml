@@ -1,6 +1,11 @@
 - name: install complete system
+  vars:
+    source_key: "./.ssh/id_rsa"
+    dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
   hosts: localhost
   tasks:
+    - import_tasks: tasks/ssh.yml
+    - import_tasks: tasks/dotfiles.yml
     - import_tasks: tasks/base.yml
     - import_tasks: tasks/fonts.yml
     - import_tasks: tasks/wm.yml
@@ -9,7 +14,6 @@
     - import_tasks: tasks/dev.yml
     - import_tasks: tasks/cli.yml
     - import_tasks: tasks/apps.yml
-    - import_tasks: tasks/dotfiles.yml
     - import_tasks: tasks/zsh-setup.yml
     - import_tasks: tasks/sdkman.yml
     - import_tasks: tasks/clj.yml
