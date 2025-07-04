@@ -4,12 +4,3 @@
     dest: "{{ ansible_env.HOME }}/.config/emacs"
     depth: 1
     update: no
-
-- name: execute doom
-  ansible.builtin.command: >
-    {{ ansible_env.HOME }}/.config/emacs/bin/doom install
-    --yes --env --fonts --hooks
-  args:
-    creates: "{{ ansible_env.HOME }}/.config/emacs/.local"
-  environment:
-    HOME: "{{ ansible_env.HOME }}"
