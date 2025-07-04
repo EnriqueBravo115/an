@@ -14,4 +14,6 @@
       - zathura-cb
       - volumeicon
       - lf
+      - rlwrap
+      - luarocks
     state: present

@@ -1,0 +1,5 @@
+- name: install sdkman
+  ansible.builtin.shell: |
+    curl -s "https://get.sdkman.io" | bash
+  args:
+    executable: /bin/bash

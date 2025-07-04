@@ -11,3 +11,4 @@
     - import_tasks: tasks/apps.yml
     - import_tasks: tasks/dotfiles.yml
     - import_tasks: tasks/zsh-setup.yml
+    - import_tasks: tasks/sdkman.yml

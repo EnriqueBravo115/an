@@ -1,0 +1,11 @@
+- name: download clj script
+  ansible.builtin.get_url:
+    url: https://github.com/clojure/brew-install/releases/latest/download/linux-install.sh
+    dest: /tmp/clojure-install.sh
+    mode: '0755'
+
+- name: execute script
+  ansible.builtin.command: /tmp/clojure-install.sh
+  become: true
+  args:
+    creates: /usr/local/bin/clojure
