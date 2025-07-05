@@ -4,6 +4,7 @@
     name:
       - xorg-server
       - xorg-xinit
+      - xorg-xrandr
       - man
       - unzip
       - zip

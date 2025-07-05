@@ -16,4 +16,5 @@
       - lf
       - rlwrap
       - luarocks
+      - xdotool
     state: present
