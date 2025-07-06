@@ -6,6 +6,5 @@
       - libreoffice
       - keepass
       - nitrogen
-      - xfce4-power-manager
       - firefox
     state: present
