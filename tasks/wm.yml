@@ -9,4 +9,6 @@
       - redshift
       - xclip
       - ueberzug
+      - i3-gaps
+      - i3-status
     state: present
