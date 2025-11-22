@@ -5,6 +5,8 @@
       - nemo
       - libreoffice
       - keepass
-      - nitrogen
       - firefox
+      - ncmpcpp
+      - mpd
+      - mpc
     state: present

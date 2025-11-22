@@ -2,9 +2,6 @@
   become: true
   pacman:
     name:
-      - xorg-xrandr
-      - xorg-server
-      - xorg-xinit
       - man
       - unzip
       - zip

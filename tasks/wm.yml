@@ -2,13 +2,10 @@
   become: true
   pacman:
     name:
-      - dmenu
-      - lxappearance
-      - picom
+      - hyprland
+      - waybar
+      - swww
+      - wofi
       - feh
-      - redshift
-      - xclip
-      - ueberzug
-      - i3-gaps
-      - i3-status
+      - wl-clipboard
     state: present

@@ -4,6 +4,4 @@
     name:
       - mpv
       - pavucontrol
-      - ffmpegthumbnailer
-      - mediainfo
     state: present
