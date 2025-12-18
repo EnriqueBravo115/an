@@ -2,15 +2,19 @@
   become: true
   pacman:
     name:
-      - grim
-      - yazi
+      - maim
       - tmux
+      - atool
       - keepass
       - unzip
+      - hyfetch
       - zip
       - zathura
       - zathura-pdf-poppler
       - zathura-cb
+      - volumeicon
+      - lf
       - rlwrap
       - luarocks
+      - xdotool
     state: present
